@@ -60,9 +60,9 @@ body{
 /* ---------------- */
 
 
-.about {
-   width: 100%; 
-  height: 30vmax;
+.greenbkgrund {
+  width: 100%; 
+  height: 30%;
   display: inline-block;
   background: rgb(153, 185, 146);
   text-align: center;
