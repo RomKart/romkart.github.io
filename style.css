@@ -19,6 +19,7 @@ body{
   padding: -1px;
   text-align: center;
   font-family: 'Aleo';
+  align-content: center;
 
 }
 
@@ -43,6 +44,7 @@ body{
   
 }
 .topnav a {
+  background-attachment: col;
   float:centre;
   color: #F6F6F6;
   text-align: center;
@@ -65,6 +67,7 @@ body{
   height: 30%;
   display: inline-block;
   background: rgb(153, 185, 146);
+  align-content: center;
   text-align: center;
   font-size: 22px;
   font-weight: 700;
