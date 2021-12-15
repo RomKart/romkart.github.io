@@ -179,17 +179,17 @@ background: repeating-linear-gradient(
   padding-top: 20px;
 }
 footer {
-  background-color: #222222;
-  margin-top: 50px;
-  margin-bottom: 20px;
+    background-color: #222222;
 }
+
 footer .container {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
+
 footer .container p {
-  margin: 0;
+    margin: 0;
 }
 
 /** PROJECTS **/
