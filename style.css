@@ -1,44 +1,43 @@
-  html{
+html {
   scroll-behavior: smooth;
 }
 
 .about {
- font-family: 'Shippori Antique B1', sans-serif;
- margin: auto;
+  font-family: 'Shippori Antique B1', sans-serif;
+  margin: auto;
   width: 50%;
   border: 3px solid green;
   padding: 10px;
-
 }
 
 .romkart {
-  padding:210px;
-  text-align: center;
-  
-  color: white;
+  padding: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 35px;
   font-family: 'Mononoaki', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
- background: repeating-linear-gradient(
-   
-   to right,
-  #222,
-  #222 10px,
-  #333 10px,
-  #333 20px
-);
 
-background: cover;
+body {
+  background: cover;
   color: rgb(255, 255, 255);
-  padding: -1px 50px 75px;
   text-align: center;
-  font-family: 'Aleo';
   align-content: center;
   margin: auto;
-  width: 50%;
-  padding: 10px;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  padding-left: var(--clr-neon);
+  background: var(--clr-bg);
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  background: repeating-linear-gradient( to right, #301934, #301934 10px, #3c1f41 10px, #3c1f41 20px);
+flex: 1;
+}
 
+body * {
+padding: 10px;
 }
 
 .fa {
@@ -49,21 +48,21 @@ background: cover;
   text-decoration: none;
   border-radius: 50%;
 }
+
 .fa:hover {
   opacity: 0.7;
 }
 
+
 /* TopNav Bar */
 
-
 .topnav {
-
   overflow: hidden;
-  
 }
+
 .topnav a {
   background-attachment: col;
-  float:centre;
+  float: centre;
   color: #F6F6F6;
   text-align: center;
   padding: 32px 16px;
@@ -76,6 +75,7 @@ background: cover;
   background-color: #D9CAB3;
   color: rgb(22, 16, 5);
 }
+
 
 /* ---------------- */
 
@@ -90,28 +90,10 @@ background: cover;
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  display: grid;
-  padding-left: var(--clr-neon);
-  background: var(--clr-bg);
- font-family: 'Zen Kaku Gothic Antique', sans-serif;
- 
-
-background: repeating-linear-gradient(
-  to right,
-  #301934,
-  #301934 10px,
-  #3c1f41 10px,
-  #3c1f41 20px
-);
-}
-  
 
 
 .neon-button {
   font-size: 4rem;
-
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -119,11 +101,8 @@ background: repeating-linear-gradient(
   border: var(--clr-neon) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-
   position: relative;
 }
 
@@ -136,7 +115,6 @@ background: repeating-linear-gradient(
   left: 0;
   width: 100%;
   height: 100%;
-
   transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
   filter: blur(1em);
   opacity: 0.7;
@@ -166,6 +144,7 @@ background: repeating-linear-gradient(
 .neon-button:focus::before {
   opacity: 1;
 }
+
 .neon-button:hover::after,
 .neon-button:focus::after {
   opacity: 1;
@@ -178,19 +157,21 @@ background: repeating-linear-gradient(
   box-sizing: border-box;
   padding-top: 20px;
 }
+
 footer {
-    background-color: #222222;
+  background-color: #222222;
 }
 
 footer .container {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 footer .container p {
-    margin: 0;
+  margin: 0;
 }
+
 
 /** PROJECTS **/
 
@@ -207,7 +188,7 @@ footer .container p {
 .view-info {
   display: flex;
   justify-content: flex-start;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .preview {
@@ -220,18 +201,23 @@ footer .container p {
   font-size: 1.25rem;
 }
 
+
 /** SOCIALS **/
+
+
 /**TABLES**/
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
 
-
+#socials-table { overflow: x-auto;}
