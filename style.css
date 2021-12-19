@@ -1,4 +1,4 @@
-  html{
+html{
   scroll-behavior: smooth;
 }
 
@@ -19,170 +19,153 @@
   font-size: 35px;
   font-family: 'Mononoaki', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
- background: repeating-linear-gradient(
-   
-   to right,
-  #222,
-  #222 10px,
-  #333 10px,
-  #333 20px
-);
 
-background: cover;
-  color: rgb(255, 255, 255);
-  padding: -1px 50px 75px;
-  text-align: center;
-  font-family: 'Aleo';
-  align-content: center;
-  margin: auto;
-  width: 50%;
+body {
+    background: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    padding-left: var(--clr-neon);
+    background: var(--clr-bg);
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    background: repeating-linear-gradient( to right, #301934, #301934 10px, #3c1f41 10px, #3c1f41 20px);
+  flex: 1;
+}
+
+body * {
   padding: 10px;
-
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
+
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
+
 
 /* TopNav Bar */
 
-
 .topnav {
-
-  overflow: hidden;
-  
+    overflow: hidden;
 }
+
 .topnav a {
-  background-attachment: col;
-  float:centre;
-  color: #F6F6F6;
-  text-align: center;
-  padding: 32px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: 'Mononoaki', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-attachment: col;
+    float: centre;
+    color: #F6F6F6;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Mononoaki', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .topnav a:hover {
-  background-color: #D9CAB3;
-  color: rgb(22, 16, 5);
+    background-color: #D9CAB3;
+    color: rgb(22, 16, 5);
+    transition: 250ms;
 }
+
 
 /* ---------------- */
 
 :root {
-  --clr-neon: hsl(317 100% 54%);
-  --clr-bg: hsl(323 21% 16%);
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  display: grid;
-  padding-left: var(--clr-neon);
-  background: var(--clr-bg);
- font-family: 'Zen Kaku Gothic Antique', sans-serif;
- 
-
-background: repeating-linear-gradient(
-  to right,
-  #301934,
-  #301934 10px,
-  #3c1f41 10px,
-  #3c1f41 20px
-);
-}
-  
 
 
 .neon-button {
-  font-size: 4rem;
-
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--clr-neon);
-  border: var(--clr-neon) 0.125em solid;
-  padding: 0.25em 1em;
-  border-radius: 0.25em;
-
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
-  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-
-  position: relative;
+    font-size: 4rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    position: relative;
 }
 
 .neon-button::before {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  background: var(--clr-neon);
-  top: 120%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-  filter: blur(1em);
-  opacity: 0.7;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
 }
 
 .neon-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 2em 0.5em var(--clr-neon);
-  opacity: 0;
-  background-color: var(--clr-neon);
-  z-index: -1;
-  transition: opacity 100ms linear;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
 }
 
 .neon-button:hover,
 .neon-button:focus {
-  color: var(--clr-bg);
-  text-shadow: none;
+    color: var(--clr-bg);
+    text-shadow: none;
 }
 
 .neon-button:hover::before,
 .neon-button:focus::before {
-  opacity: 1;
+    opacity: 1;
 }
+
 .neon-button:hover::after,
 .neon-button:focus::after {
-  opacity: 1;
+    opacity: 1;
 }
 
 .container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1280px;
-  box-sizing: border-box;
-  padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    box-sizing: border-box;
+    padding-top: 20px;
 }
+
 footer {
     background-color: #222222;
+    
 }
 
 footer .container {
+  flex: 1;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
@@ -192,46 +175,62 @@ footer .container p {
     margin: 0;
 }
 
+
 /** PROJECTS **/
 
 * {
-  /*   font-size: 1.5rem; */
-  font-family: "Roboto", sans-serif;
+    /*   font-size: 1.5rem; */
+    font-family: "Roboto", sans-serif;
 }
 
 .reccomendation {
-  display: flex;
-  cursor: pointer;
+    display: flex;
+    cursor: pointer;
+}
+
+.info{
+  cursor: auto;
 }
 
 .view-info {
-  display: flex;
-  justify-content: flex-start;
-   cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .preview {
-  position: relative;
-  margin-right: 0.5rem;
+    position: relative;
+    margin-right: 0.5rem;
 }
 
 .title {
-  font-weight: bold;
-  font-size: 1.25rem;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
+
 
 /** SOCIALS **/
+
+
 /**TABLES**/
+
+
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-left: auto;
+  margin-right: auto;
+
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 
+
+#socials-table { overflow: x-auto;}
+
+hr { padding-top: 0px; padding-bottom: 0px; }
