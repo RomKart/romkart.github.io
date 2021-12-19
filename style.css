@@ -55,13 +55,6 @@ padding: 10px;
 
 
 /* TopNav Bar */
-
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-}
-
-
 .topnav {
   overflow: hidden;
 }
@@ -228,3 +221,10 @@ th {
 }
 
 #socials-table { overflow: x-auto;}
+
+
+
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
