@@ -8,7 +8,8 @@ html{
   width: 50%;
   border: 3px solid green;
   padding: 10px;
-
+text-align: center;
+align-content: center;
 }
 
 .romkart {
@@ -179,6 +180,7 @@ footer .container p {
 /** PROJECTS **/
 
 * {
+  text-align: center;
     /*   font-size: 1.5rem; */
     font-family: "Roboto", sans-serif;
 }
@@ -234,3 +236,5 @@ th {
 #socials-table { overflow: x-auto;}
 
 hr { padding-top: 0px; padding-bottom: 0px; }
+
+
