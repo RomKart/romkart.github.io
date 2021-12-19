@@ -56,6 +56,12 @@ padding: 10px;
 
 /* TopNav Bar */
 
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+
 .topnav {
   overflow: hidden;
 }
