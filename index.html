@@ -1,4 +1,154 @@
 <!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -13,6 +163,7 @@
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
     <link href="style.css" rel="stylesheet" 
     type="text/css" />
+
     
 <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/emojis/857848609416282132.png?size=96/">
   </head>
@@ -26,3 +177,48 @@
 <a href="main.html" class="neon-button">RomKart</a>
 
 </header>
+
+ 
+
+
+
+<script type="text/javascript">
+      function mousehandler(e) {
+          var myevent = (isNS) ? e : event;
+          var eventbutton = (isNS) ? myevent.which : myevent.button;
+          if ((eventbutton == 2) || (eventbutton == 3)) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+      function disableCtrlKeyCombination(e) {
+          var forbiddenKeys = new Array("a", "s", "c", "x","u");
+          var key;
+          var isCtrl;
+          if (window.event) {
+              key = window.event.keyCode;
+              //IE
+              if (window.event.ctrlKey)
+                  isCtrl = true;
+              else
+                  isCtrl = false;
+          }
+          else {
+              key = e.which;
+              //firefox
+              if (e.ctrlKey)
+                  isCtrl = true;
+              else
+                  isCtrl = false;
+          }
+          if (isCtrl) {
+              for (i = 0; i < forbiddenKeys.length; i++) {
+                  //case-insensitive comparation
+                  if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                      return false;
+                  }
+              }
+          }
+          return true;
+      }
+  </script>
