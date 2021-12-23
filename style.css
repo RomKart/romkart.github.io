@@ -231,13 +231,14 @@ align-content: center;
 body {
     background: cover;
     color: rgb(255, 255, 255);
+    
     text-align: center;
     align-content: center;
     margin: auto;
-    width: 100%;
+    width: 50%;
     min-height: 100vh;
     display: grid;
-    padding-left: var(--clr-neon);
+    padding: 10px;
     background: var(--clr-bg);
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     background: repeating-linear-gradient( to right, #301934, #301934 10px, #3c1f41 10px, #3c1f41 20px);
