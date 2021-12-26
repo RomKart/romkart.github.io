@@ -238,7 +238,7 @@ body {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    padding: 10px;
+     padding-left: var(--clr-neon);
     background: var(--clr-bg);
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     background: repeating-linear-gradient( to right, #301934, #301934 10px, #3c1f41 10px, #3c1f41 20px);
