@@ -235,7 +235,7 @@ body {
     text-align: center;
     align-content: center;
     margin: auto;
-    width: 50%;
+    width: 100%;
     min-height: 100vh;
     display: grid;
     padding: 10px;
